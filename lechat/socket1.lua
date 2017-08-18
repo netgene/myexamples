@@ -57,10 +57,10 @@ local function accept(id)
 
                 if ok then
                     if result then
-                        socket.write(id, "收到了")
+                        --socket.write(id, "收到了")
                         -- 暂时不使用回应包回应
-                        -- print("response:"..result)
-                        -- send_package(id,result)
+                        print("response:"..result)
+                        send_package(id,result)
                     end
                 else
                     skynet.error(result)

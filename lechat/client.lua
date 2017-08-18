@@ -37,7 +37,7 @@ send_request("say", { name = "soul", msg = "hello world" })
 
 while true do
     -- 接收服务器返回消息
-    local str   = socket.recv(fd)
+    local str = socket.recv(fd)
 
     -- print(str)
     if str~=nil and str~="" then
