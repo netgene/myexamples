@@ -75,6 +75,7 @@ skynet.start(function()
 	end
 	local db=mysql.connect({
 		host="127.0.0.1",
+		port=3306,
 		database="lechat",
 		user="root",
 		password="thankgod132465",
